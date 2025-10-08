@@ -1,9 +1,7 @@
 """
-Restaurant Management System v0.1.2 NA,
+Restaurant Management System 
 App is made to facilitate restaurant management processes.
 
-Developed by Aliyev Nurlan in Dec 2022
-Last upgrades: Jan 2023
 """
 
 from BASE.Components.mainwindow import MainWindow
