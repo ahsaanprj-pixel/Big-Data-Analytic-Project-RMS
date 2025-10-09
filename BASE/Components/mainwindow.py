@@ -1,3 +1,4 @@
+
 """
 Main application window for Restaurant Management System.
 Week 1: Basic UI window setup + database connection test.
@@ -19,6 +20,7 @@ from sqlite3 import Error
 # =====================================================
 
 from BASE.Components.Database import Database
+# from BASE.Components.configwindow import ConfigWindow
 
 
 class MainWindow(tk.Tk):
@@ -80,7 +82,9 @@ class MainWindow(tk.Tk):
         self.filebar.add_command(label="🧾 Print Receipts", state=tk.DISABLED)
         self.filebar.add_command(label="👨‍🍳 Kitchen", state=tk.DISABLED)
         self.filebar.add_command(label="🛎️ Create Orders", state=tk.DISABLED)
-        self.filebar.add_command(label="⚙️ Configure Facility/Menu", state=tk.DISABLED)
+        # self.filebar.add_command(label="⚙️ Configure Facility/Menu", state=tk.DISABLED)
+        self.filebar.add_command(label="⚙️ Configure Facility/Menu", command=self.config_window)
+
 
         self.filebar.add_separator()  # Visual separator
         self.filebar.add_command(label="❌ Exit", command=self.quit)  # Exit button
@@ -155,9 +159,9 @@ class MainWindow(tk.Tk):
     # ==========================================================
     # Original window launchers (kept commented for next weeks)
     # ==========================================================
-    # def config_window(self):
-    #     config_window = ConfigWindow(self, self.check_databases)
-    #     config_window.grab_set()
+    def config_window(self):
+        config_window = ConfigWindow(self, self.check_databases)
+        config_window.grab_set()
 
     # def kitchen_win(self):
     #     kitchen_win = KitchenWindow(self, self.check_databases)
@@ -175,3 +179,5 @@ class MainWindow(tk.Tk):
     #     print_win = PrintOrders(self)
     #     print_win.grab_set()
     # ==========================================================
+
+
