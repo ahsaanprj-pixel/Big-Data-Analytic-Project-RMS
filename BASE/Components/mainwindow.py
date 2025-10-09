@@ -1,10 +1,4 @@
 
-"""
-Main application window for Restaurant Management System.
-Week 1: Basic UI window setup + database connection test.
-Later weeks will enable menus and additional windows.
-"""
-
 import os
 import tkinter as tk
 from tkinter import ttk
@@ -20,7 +14,7 @@ from sqlite3 import Error
 # =====================================================
 
 from BASE.Components.Database import Database
-# from BASE.Components.configwindow import ConfigWindow
+from BASE.Components.configwindow import ConfigWindow
 
 
 class MainWindow(tk.Tk):
@@ -179,5 +173,16 @@ class MainWindow(tk.Tk):
     #     print_win = PrintOrders(self)
     #     print_win.grab_set()
     # ==========================================================
+
+
+
+
+
+
+
+
+
+
+
 
 

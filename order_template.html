@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    /* ======= PAGE CONTAINER STYLING =======
+       This section defines the layout of the main printable receipt page.
+       The container uses absolute positioning for precise placement. */
+    .container {
+      width: 595pt; /* Standard A4 width in points */
+      height: 842pt; /* Standard A4 height in points */
+      display: flex;
+      overflow: auto;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    /* ======= MAIN TEXT (RESTAURANT NAME) ======= */
+    .text {
+      top: 30pt; /* Distance from top of the page */
+      left: 260pt; /* Centered horizontally */
+      margin: auto;
+      position: absolute;
+    }
+
+    /* ======= TABLE NUMBER DISPLAY ======= */
+    .text1 {
+      top: 80pt;
+      left: 265pt;
+      position: absolute;
+      font-size: 24pt;
+    }
+
+    /* ======= COLUMN HEADERS ======= */
+    .text2 {
+      top: 130pt;
+      left: 85pt;
+      position: absolute;
+      font-size: 20pt;
+    }
+
+    .text3 {
+      top: 130pt;
+      left: 275pt;
+      position: absolute;
+      font-size: 20pt;
+    }
+
+    .text4 {
+      top: 130pt;
+      right: 85pt;
+      position: absolute;
+      font-size: 20pt;
+    }
+
+    /* ======= HORIZONTAL SEPARATOR LINE ======= */
+    hr {
+      border: none;
+      border-top: 1px dotted #000; /* Dotted line separator */
+      color: #fff;
+      background-color: #fff;
+      height: 1px;
+      width: 80%;
+      top: 150pt;
+      position: absolute;
+    }
+
+    /* ======= PRINT SETTINGS =======
+       This ensures the page fits on A4 paper when printed. */
+    @media print {
+      @page {
+        size: A4;
+      }
+    }
+    </style>
+  </head>
+
+  <body onload="window.print()">
+    <!-- When the page loads, automatically triggers print dialog -->
+    <div class='container'>
+        <!-- Fac_name and t_num are placeholders replaced dynamically by Python -->
+        <h1 class='text'>Fac_name</h1>
+        <span class='text1'>t_num</span>
+        <span class='text2'>Name</span>
+        <span class='text3'>Quantity</span>
+        <span class='text4'>Price</span>
+        <hr>
+      </div>
+  </body>
+</html>

@@ -53,6 +53,8 @@ class Database:
         )
         self.conn.commit()
 
+        print("✅ Database connected successfully and ready for use.")
+
         # ✅ Insert initial configuration values (fac_config, menu_config, orders)
         self.insert_genconfig()
 
@@ -150,4 +152,5 @@ class Database:
     # Destructor: closes database connection when object is deleted
     # ===============================================================
     def __del__(self):
+        print("🔚 Database connection closed.")
         self.conn.close()
