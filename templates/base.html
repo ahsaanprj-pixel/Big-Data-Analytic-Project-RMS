@@ -1,0 +1,27 @@
+<!-- Week 1: Basic template structure -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Restaurant Management System{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <h1>Restaurant Management System</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Dashboard</a></li>
+            <li><a href="{{ url_for('config') }}">Configure</a></li>
+            <li><a href="{{ url_for('create_order') }}">Create Order</a></li>
+            <li><a href="{{ url_for('kitchen') }}">Kitchen</a></li>
+            <li><a href="{{ url_for('print_receipt') }}">Print Receipt</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
