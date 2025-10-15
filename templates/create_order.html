@@ -1,0 +1,28 @@
+
+{% extends 'base.html' %}
+{% block title %}Create Order{% endblock %}
+
+{% block content %}
+    <form method="POST">
+        <h3 class="mt-4">Create Order</h3>
+        <div class="form-group">
+            <label>Table Number (1 - {{ max_tables }}):</label>
+            <input type="number" name="table_num" class="form-control" min="1" max="{{ max_tables }}" required>
+        </div>
+        <h4>Products</h4>
+        <div id="products-container"></div>
+        <button type="button" class="btn btn-secondary mt-2" onclick="addProductRow(menuItems)">Add Product</button>
+        <button type="submit" class="btn btn-primary mt-2" id="submit-btn">Send to Kitchen</button>
+    </form>
+    <script>
+        const menuItems = {{ menu_items | map(attribute=0) | list | tojson | safe }};
+        console.log('Create Order page loaded. Menu items:', menuItems);
+        if (menuItems && menuItems.length > 0) {
+            addProductRow(menuItems);
+        } else {
+            console.log('No menu items available');
+            document.getElementById('products-container').innerHTML = '<p class="text-danger">No menu items available. Please add in Config.</p>';
+            document.getElementById('submit-btn').disabled = true;
+        }
+    </script>
+{% endblock %}
