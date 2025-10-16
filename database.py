@@ -3,11 +3,9 @@ from sqlite3 import Error
 
 class Database:
     def __init__(self, db):
-        # Initialize database with the provided database file path
         self.db = db
 
     def get_connection(self):
-        # Create and return a new database connection
         return sqlite3.connect(self.db)
 
     def create_table(self, create_table_query):
@@ -22,13 +20,11 @@ class Database:
             print("❌ Error creating table:", e)
 
     def insert_genconfig(self):
-        # Create gen_config table and insert default configuration records
         try:
             conn = self.get_connection()
             cursor = conn.cursor()
-            # Create table if it doesn't exist
             cursor.execute("CREATE TABLE IF NOT EXISTS gen_config (id INTEGER PRIMARY KEY, conf_name text);")
-            # Insert default configuration types with unique IDs
+         
             cursor.execute("INSERT OR IGNORE INTO gen_config(id, conf_name) VALUES (?, ?)", (1, "fac_config"))
             cursor.execute("INSERT OR IGNORE INTO gen_config(id, conf_name) VALUES (?, ?)", (2, "menu_config"))
             cursor.execute("INSERT OR IGNORE INTO gen_config(id, conf_name) VALUES (?, ?)", (3, "orders"))
@@ -39,7 +35,6 @@ class Database:
             print("❌ Error inserting default configs:", e)
 
     def insert_spec_config(self, insert_query, values):
-        # Insert specific configuration data using provided query and parameters
         try:
             conn = self.get_connection()
             cursor = conn.cursor()

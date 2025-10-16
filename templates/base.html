@@ -1,16 +1,22 @@
-<!-- Week 1: Basic template structure -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Restaurant Management System{% endblock %}</title>
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
+  
     <header>
         <h1>Restaurant Management System</h1>
     </header>
+    
+    <!-- Navigation menu for main application sections -->
     <nav>
         <ul>
             <li><a href="{{ url_for('index') }}">Dashboard</a></li>
@@ -20,16 +26,23 @@
             <li><a href="{{ url_for('print_receipt') }}">Print Receipt</a></li>
         </ul>
     </nav>
+    
+    <!-- Flash messages display section for user feedback -->
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="container flash-messages">
+                <ul class="list-group">
+                    {% for message in messages %}
+                        <li class="list-group-item list-group-item-danger">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+    {% endwith %}
+    
+    <!-- Main content container where page-specific content will be inserted -->
     <div class="container">
         {% block content %}{% endblock %}
     </div>
 </body>
 </html>
-
-
-
-
-
-
-
-

@@ -1,3 +1,4 @@
+
 from flask import Flask, render_template, request, redirect, url_for, flash
 import sqlite3
 import html
@@ -163,11 +164,11 @@ def create_order():
 
 @app.route('/kitchen')
 def kitchen():
-    return "Kitchen page - enhanced in Wk 5"
+    return "Kitchen page - enhanced in Week 5"
 
 @app.route('/print_receipt')
 def print_receipt():
-    return "Print Receipt page - enhanced in Wk 6"
+    return "Print Receipt page - enhanced in Week 6"
 
 if __name__ == '__main__':
     app.run(debug=True)
