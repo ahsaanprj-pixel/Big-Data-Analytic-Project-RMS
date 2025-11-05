@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block title %}Kitchen{% endblock %}
+
+{% block content %}
+  
+    <h2 class="mt-4">Kitchen Orders</h2>
+    
+    <!-- Display message if no active orders exist -->
+    {% if not orders_by_table %}
+        <p class="text-info">No active orders in the kitchen.</p>
+    {% endif %}
+    
+    <!-- Loop through orders grouped by table number -->
+    {% for table, orders in orders_by_table.items() %}
+        <!-- Subheading for each table's orders -->
+        <h4>Table {{ table }}</h4>
+        <!-- Table to display order details: ID, product name, quantity, status, and action -->
+        <table class="table table-striped table-bordered">
+            <thead>
+                <!-- Table header defining columns -->
+                <tr><th>ID</th><th>Product Name</th><th>Quantity</th><th>Status</th><th>Action</th></tr>
+            </thead>
+            <tbody>
+                <!-- Loop through orders for the current table -->
+                {% for order in orders %}
+                    <tr>
+                        <td>{{ order[0] }}</td>
+                        <td>{{ order[1] }}</td>
+                        <td>{{ order[2] }}</td>
+                        <td>{{ order[3] }}</td>
+                        <!-- Action column for marking orders as cooked -->
+                        <td>
+                            {% if order[3] == 'Ordered' %}
+                                <!-- Form to mark an order as cooked, sends POST request to /kitchen -->
+                                <form method="POST" style="display:inline;">
+                                    <input type="hidden" name="action" value="mark_cooked">
+                                    <input type="hidden" name="product_name" value="{{ order[1] }}">
+                                    <input type="hidden" name="table_num" value="{{ table }}">
+                                    <button type="submit" class="btn btn-warning btn-sm">Mark Cooked</button>
+                                </form>
+                            {% endif %}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <!-- Display Fulfill Order button if no orders are in 'Ordered' status -->
+        {% if not has_ordered[table] %}
+            <!-- Form to fulfill all cooked orders for the table, sends POST request to /kitchen -->
+            <form method="POST">
+                <input type="hidden" name="action" value="fulfill_order">
+                <input type="hidden" name="table_num" value="{{ table }}">
+                <button type="submit" class="btn btn-success mb-4">Fulfill Order</button>
+            </form>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
