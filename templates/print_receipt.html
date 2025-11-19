@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Print Receipt{% endblock %}
+
+{% block content %}
+  
+    <h3 class="mt-4">Print Receipt</h3>
+    
+    <form method="POST">
+      
+        <div class="form-group">
+            <label>Table Number (1 - {{ max_tables }}):</label>
+        
+            <input type="number" name="table_num" class="form-control" min="1" max="{{ max_tables }}" required>
+        </div>
+       
+        <button type="submit" class="btn btn-primary">Load and Print Receipt</button>
+    
+        <button type="submit" name="action" value="new_customer" class="btn btn-warning">New Customer</button>
+    </form>
+    
+{% endblock %}
