@@ -1,8 +1,15 @@
 
+
+
+
+
 {% extends 'base.html' %}
 {% block title %}Dashboard{% endblock %}
 
 {% block content %}
     <h2 class="mt-4">Welcome to {{ restaurant_name }}</h2>
     <p>Use the navigation to manage the restaurant.</p>
+    {% if 'assets/res.jpg' %}
+        <img src="{{ url_for('static', filename='assets/res.jpg') }}" alt="Restaurant" class="img-fluid rounded" style="max-width: 400px; display: block; margin: 20px auto;">
+    {% endif %}
 {% endblock %}
