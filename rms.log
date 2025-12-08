@@ -64,3 +64,74 @@
 2025-12-04 13:39:47,338 - INFO - 127.0.0.1 - - [04/Dec/2025 13:39:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
 2025-12-04 13:39:47,339 - INFO - 127.0.0.1 - - [04/Dec/2025 13:39:47] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
 2025-12-04 13:39:47,415 - INFO - 127.0.0.1 - - [04/Dec/2025 13:39:47] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-12-04 13:40:46,318 - INFO - Database tables initialized
+2025-12-04 13:40:46,376 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-04 13:40:46,376 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-04 13:40:46,379 - INFO -  * Restarting with stat
+2025-12-04 13:40:47,333 - INFO - Database tables initialized
+2025-12-04 13:40:47,377 - WARNING -  * Debugger is active!
+2025-12-04 13:40:47,386 - INFO -  * Debugger PIN: 453-129-632
+2025-12-04 13:40:47,768 - INFO - 127.0.0.1 - - [04/Dec/2025 13:40:47] "GET / HTTP/1.1" 200 -
+2025-12-04 13:40:48,152 - INFO - 127.0.0.1 - - [04/Dec/2025 13:40:48] "[36mGET /static/assets/res.jpg HTTP/1.1[0m" 304 -
+2025-12-04 13:40:48,170 - INFO - 127.0.0.1 - - [04/Dec/2025 13:40:48] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-12-04 13:40:48,172 - INFO - 127.0.0.1 - - [04/Dec/2025 13:40:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-04 13:40:48,183 - INFO - 127.0.0.1 - - [04/Dec/2025 13:40:48] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-12-04 13:40:54,693 - INFO - 127.0.0.1 - - [04/Dec/2025 13:40:54] "GET / HTTP/1.1" 200 -
+2025-12-04 13:40:54,807 - INFO - 127.0.0.1 - - [04/Dec/2025 13:40:54] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-04 13:40:54,809 - INFO - 127.0.0.1 - - [04/Dec/2025 13:40:54] "[36mGET /static/assets/res.jpg HTTP/1.1[0m" 304 -
+2025-12-04 13:40:54,811 - INFO - 127.0.0.1 - - [04/Dec/2025 13:40:54] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-12-04 13:40:54,830 - INFO - 127.0.0.1 - - [04/Dec/2025 13:40:54] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-12-04 13:40:56,048 - INFO - 127.0.0.1 - - [04/Dec/2025 13:40:56] "GET /config HTTP/1.1" 200 -
+2025-12-04 13:40:56,159 - INFO - 127.0.0.1 - - [04/Dec/2025 13:40:56] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-04 13:40:56,160 - INFO - 127.0.0.1 - - [04/Dec/2025 13:40:56] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-12-04 13:40:56,173 - INFO - 127.0.0.1 - - [04/Dec/2025 13:40:56] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-12-04 13:40:57,442 - INFO - 127.0.0.1 - - [04/Dec/2025 13:40:57] "GET / HTTP/1.1" 200 -
+2025-12-04 13:40:57,555 - INFO - 127.0.0.1 - - [04/Dec/2025 13:40:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-04 13:40:57,561 - INFO - 127.0.0.1 - - [04/Dec/2025 13:40:57] "[36mGET /static/assets/res.jpg HTTP/1.1[0m" 304 -
+2025-12-04 13:40:57,562 - INFO - 127.0.0.1 - - [04/Dec/2025 13:40:57] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-12-04 13:40:57,584 - INFO - 127.0.0.1 - - [04/Dec/2025 13:40:57] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-12-04 13:42:03,324 - INFO -  * Detected change in 'C:\\Users\\ahsaa\\OneDrive\\Desktop\\BDA Guide\\Again 3 BDA Project(Not Complete Weekly Edit and Push Github)\\app.py', reloading
+2025-12-04 13:42:03,468 - INFO -  * Restarting with stat
+2025-12-04 13:42:04,548 - INFO - Database tables initialized
+2025-12-04 13:42:04,685 - WARNING -  * Debugger is active!
+2025-12-04 13:42:04,695 - INFO -  * Debugger PIN: 453-129-632
+2025-12-04 13:42:07,301 - INFO -  * Detected change in 'C:\\Users\\ahsaa\\OneDrive\\Desktop\\BDA Guide\\Again 3 BDA Project(Not Complete Weekly Edit and Push Github)\\database.py', reloading
+2025-12-04 13:42:07,364 - INFO -  * Restarting with stat
+2025-12-04 13:42:08,074 - INFO - Database tables initialized
+2025-12-04 13:42:08,139 - WARNING -  * Debugger is active!
+2025-12-04 13:42:08,151 - INFO -  * Debugger PIN: 453-129-632
+2025-12-04 13:42:16,934 - INFO - 127.0.0.1 - - [04/Dec/2025 13:42:16] "GET / HTTP/1.1" 200 -
+2025-12-04 13:42:17,459 - INFO - 127.0.0.1 - - [04/Dec/2025 13:42:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-04 13:42:17,559 - INFO - 127.0.0.1 - - [04/Dec/2025 13:42:17] "[36mGET /static/assets/res.jpg HTTP/1.1[0m" 304 -
+2025-12-04 13:42:17,567 - INFO - 127.0.0.1 - - [04/Dec/2025 13:42:17] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-12-04 13:46:49,359 - INFO - 127.0.0.1 - - [04/Dec/2025 13:46:49] "GET /config HTTP/1.1" 200 -
+2025-12-04 13:46:49,464 - INFO - 127.0.0.1 - - [04/Dec/2025 13:46:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-04 13:46:49,469 - INFO - 127.0.0.1 - - [04/Dec/2025 13:46:49] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-12-04 13:47:11,696 - INFO - 127.0.0.1 - - [04/Dec/2025 13:47:11] "GET /create_order HTTP/1.1" 200 -
+2025-12-04 13:47:11,767 - INFO - 127.0.0.1 - - [04/Dec/2025 13:47:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-04 13:47:11,769 - INFO - 127.0.0.1 - - [04/Dec/2025 13:47:11] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-12-04 13:47:11,797 - INFO - 127.0.0.1 - - [04/Dec/2025 13:47:11] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-12-04 13:47:15,999 - INFO - 127.0.0.1 - - [04/Dec/2025 13:47:15] "GET /kitchen HTTP/1.1" 200 -
+2025-12-04 13:47:16,057 - INFO - 127.0.0.1 - - [04/Dec/2025 13:47:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-04 13:47:16,060 - INFO - 127.0.0.1 - - [04/Dec/2025 13:47:16] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-12-04 13:47:16,112 - INFO - 127.0.0.1 - - [04/Dec/2025 13:47:16] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-12-04 13:47:18,915 - INFO - 127.0.0.1 - - [04/Dec/2025 13:47:18] "GET /config HTTP/1.1" 200 -
+2025-12-04 13:49:01,876 - INFO -  * Detected change in 'C:\\Users\\ahsaa\\OneDrive\\Desktop\\BDA Guide\\Again 3 BDA Project(Not Complete Weekly Edit and Push Github)\\app.py', reloading
+2025-12-04 13:49:01,967 - INFO -  * Restarting with stat
+2025-12-08 20:14:37,019 - INFO -  * Restarting with stat
+2025-12-08 20:21:09,040 - INFO -  * Restarting with stat
+2025-12-08 20:45:37,806 - INFO -  * Restarting with stat
+2025-12-08 20:45:44,336 - INFO -  * Restarting with stat
+2025-12-08 20:45:51,576 - INFO -  * Restarting with stat
+2025-12-08 21:14:58,759 - INFO -  * Restarting with stat
+2025-12-08 21:15:04,490 - INFO -  * Restarting with stat
+2025-12-08 21:54:12,714 - INFO -  * Restarting with stat
+2025-12-08 21:54:25,646 - INFO -  * Restarting with stat
+2025-12-08 21:54:39,545 - INFO -  * Restarting with stat
+2025-12-08 21:54:42,986 - INFO -  * Restarting with stat
+2025-12-08 22:19:27,108 - INFO -  * Restarting with stat
+2025-12-08 22:22:20,637 - INFO -  * Restarting with stat
+2025-12-08 22:22:26,131 - INFO -  * Restarting with stat
+2025-12-08 22:31:58,559 - INFO -  * Restarting with stat
+2025-12-08 22:32:03,876 - INFO -  * Restarting with stat

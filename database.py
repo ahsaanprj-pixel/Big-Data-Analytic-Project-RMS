@@ -17,7 +17,8 @@ class Database:
             conn.close()
             print("✅ Table created or already exists.")
         except Error as e:
-            print("❌ Error creating table:", e)
+            print(" Error creating table:", e)
+
 
     def insert_genconfig(self):
         try:

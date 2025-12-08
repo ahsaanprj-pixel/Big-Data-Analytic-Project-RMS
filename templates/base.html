@@ -21,6 +21,8 @@
             <li><a href="{{ url_for('print_receipt') }}">Print Receipt</a></li>
         </ul>
     </nav>
+
+    
     {% with messages = get_flashed_messages() %}
         {% if messages %}
             <div class="container flash-messages">
